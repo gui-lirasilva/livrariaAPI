@@ -25,6 +25,11 @@ build/
 .settings/
 *.classpath
 *.project
+.mvn/
+HELP.md
+mvnw
+mvnw.cmd
+src/main/resources/
 
 ### Eclipse ###
 .metadata
