@@ -5,8 +5,8 @@ O projeto será atualizado e incrementado ao decorrer dos módulos do bootcamp, 
 
 ## 🔨 Funcionalidades do projeto
 
-- `Cadastro de de autores``Nome do autor``Data de nascimento``Mini biografia`
-- `Cadastro de livros``Titulo``Autor``Numero de páginas``Data de lançamento`
+- `Cadastro de de autores` `Nome do autor` `Data de nascimento` `Mini biografia`
+- `Cadastro de livros` `Titulo` `Autor` `Numero de páginas` `Data de lançamento`
 - `Validações para as entradas de informação de autores e livros`
 - `As informações ainda não acessando o banco de dados`
  
