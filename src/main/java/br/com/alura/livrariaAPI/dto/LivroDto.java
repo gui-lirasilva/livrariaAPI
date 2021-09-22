@@ -9,6 +9,6 @@ import lombok.Setter;
 public class LivroDto {
 	
 	private String titulo;
-	private Autor autor;
+	private AutorDto autor;
 	private int numeroDePaginas;
 }
