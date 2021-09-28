@@ -8,7 +8,8 @@ import javax.validation.constraints.NotNull;
 import javax.validation.constraints.PastOrPresent;
 import javax.validation.constraints.Size;
 
-import br.com.alura.livrariaAPI.modelo.Autor;
+import com.fasterxml.jackson.annotation.JsonFormat;
+
 import lombok.Getter;
 import lombok.Setter;
 
@@ -21,11 +22,12 @@ public class LivroFormDto {
 	private String titulo;
 	
 	@NotNull
-	private Autor autor;
+	private AutorDto autor;
 	
 	@Min(100)
 	private int numeroDePaginas;
 	
 	@PastOrPresent
+	@JsonFormat(pattern = "dd/MM/yyyy")
 	private LocalDate dataLancamento;
 }
