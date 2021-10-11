@@ -2,6 +2,7 @@ package br.com.alura.livrariaAPI.dto;
 
 import java.time.LocalDate;
 
+import javax.validation.constraints.Email;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Past;
 import javax.validation.constraints.Size;
@@ -22,7 +23,7 @@ public class AutorFormDto {
 	@JsonFormat(pattern = "dd/MM/yyyy")
 	private LocalDate dataNascimento;
 	
-	@NotBlank
+	@Email
 	private String email;
 	
 	@NotBlank
