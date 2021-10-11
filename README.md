@@ -50,3 +50,8 @@ Você pode acessar os arquivos do projeto clicando [aqui](https://github.com/gui
 ``Get livros``
 
 ![GET_livro](https://github.com/gui-lirasilva/livrariaAPI/blob/master/Imagens/GET_livros.png)
+
+<div align="center">
+  <img height="160em" src="https://github.com/gui-lirasilva/livrariaAPI/blob/master/Imagens/POST_autor.png"/>
+  <img height="160em" src="https://github.com/gui-lirasilva/livrariaAPI/blob/master/Imagens/GET_autor.png"/>
+</div>
