@@ -47,5 +47,5 @@ Você pode acessar os arquivos do projeto clicando [aqui](https://github.com/gui
 
  <br>
 
-  <img height="42" width="42"src="https://github.com/gui-lirasilva/livrariaAPI/blob/master/Imagens/GET_livros.png" alt="GET_livros"/>
+  <img height="42px" width="42px"src="https://github.com/gui-lirasilva/livrariaAPI/blob/master/Imagens/GET_livros.png"/>
 
