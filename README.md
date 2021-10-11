@@ -36,13 +36,17 @@ Você pode acessar os arquivos do projeto clicando [aqui](https://github.com/gui
 ## 🖼 Imagens do funcionamento da API
 
 ``Post autores``
+
 ![POST_autor](https://github.com/gui-lirasilva/livrariaAPI/blob/master/Imagens/POST_autor.png)
 
 ``Get autores``
+
 ![GET_autor](https://github.com/gui-lirasilva/livrariaAPI/blob/master/Imagens/GET_autor.png)
 
 ``Post livros``
+
 ![POST_livro](https://github.com/gui-lirasilva/livrariaAPI/blob/master/Imagens/POST_livros.png)
 
 ``Get livros``
+
 ![GET_livro](https://github.com/gui-lirasilva/livrariaAPI/blob/master/Imagens/GET_livros.png)
