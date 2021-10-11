@@ -8,7 +8,6 @@ O desenvolvimento da API foi feita com base no que pude aprender dos exercícios
 - `Cadastro de de autores` `Nome do autor` `Data de nascimento` `Mini biografia`
 - `Cadastro de livros` `Titulo` `Autor` `Numero de páginas` `Data de lançamento`
 - `Validações para as entradas de informação de autores e livros`
-- 
  
 
 ## ✔️ Técnicas e tecnologias utilizadas
