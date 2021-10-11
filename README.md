@@ -37,14 +37,15 @@ Você pode acessar os arquivos do projeto clicando [aqui](https://github.com/gui
 
   <img height="640em" src="https://github.com/gui-lirasilva/livrariaAPI/blob/master/Imagens/POST_autor.png"/>
 
-    &nbsp;
+ <br>
 
   <img height="640em" src="https://github.com/gui-lirasilva/livrariaAPI/blob/master/Imagens/GET_autor.png"/>
 
-    &nbsp;
+ <br>
 
   <img height="640em" src="https://github.com/gui-lirasilva/livrariaAPI/blob/master/Imagens/POST_livros.png"/>
 
-    &nbsp;
+ <br>
 
-  <img height="640em" src="https://github.com/gui-lirasilva/livrariaAPI/blob/master/Imagens/GET_livros.png"/>
+  <img height="42" width="42"src="https://github.com/gui-lirasilva/livrariaAPI/blob/master/Imagens/GET_livros.png" alt="GET_livros"/>
+
