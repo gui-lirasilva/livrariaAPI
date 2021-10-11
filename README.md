@@ -32,3 +32,17 @@ O desenvolvimento da API foi feita com base no que pude aprender dos exercícios
 
 ## 📁 Acesso ao projeto
 Você pode acessar os arquivos do projeto clicando [aqui](https://github.com/gui-lirasilva/livrariaAPI/tree/master/src/main/java/br/com/alura/livrariaAPI).
+
+## 🖼 Imagens do funcionamento da API
+
+``Post autor``
+![POST_autor](https://github.com/gui-lirasilva/livrariaAPI/Imagens/POST_autor.png)
+
+``Get autor``
+![GET_autor](https://github.com/gui-lirasilva/livrariaAPI/Imagens/GET_autor.png)
+
+``Post livro``
+![POST_livro](https://github.com/gui-lirasilva/livrariaAPI/Imagens/POST_livro.png)
+
+``Get livro``
+![GET_livro](https://github.com/gui-lirasilva/livrariaAPI/Imagens/GET_livro.png)
