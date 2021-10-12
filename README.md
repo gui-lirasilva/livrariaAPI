@@ -8,6 +8,7 @@ O desenvolvimento da API foi feita com base no que pude aprender dos exercícios
 - `Cadastro de de autores` `Nome do autor` `Data de nascimento` `Mini biografia`
 - `Cadastro de livros` `Titulo` `Autor` `Numero de páginas` `Data de lançamento`
 - `Validações para as entradas de informação de autores e livros`
+- `Relatório de livros` `Número de livros por autor`
  
 
 ## ✔️ Técnicas e tecnologias utilizadas
@@ -50,4 +51,6 @@ Você pode acessar os arquivos do projeto clicando [aqui](https://github.com/gui
 
 ![GET_livro](https://github.com/gui-lirasilva/livrariaAPI/blob/master/Imagens/GET_livros.png)
 
+``Get Relatório de livros``
 
+![GET_livro](https://github.com/gui-lirasilva/livrariaAPI/blob/master/Imagens/GET_RelatorioDeLivros.png)

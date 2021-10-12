@@ -7,5 +7,5 @@ import br.com.alura.livrariaAPI.modelo.Autor;
 
 @Repository
 public interface AutorRepository extends JpaRepository<Autor, Long>{
-
+	
 }
