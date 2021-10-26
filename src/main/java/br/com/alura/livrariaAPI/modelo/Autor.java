@@ -32,4 +32,19 @@ public class Autor {
 	private String email;
 	
 	private String miniCurriculo;
+
+	public Autor(String nome, LocalDate dataNascimento, String email, String miniCurriculo) {
+		this.nome = nome;
+		this.dataNascimento = dataNascimento;
+		this.email = email;
+		this.miniCurriculo = miniCurriculo;
+	}
+	
+	public void atualizarInformacoes(String nome, LocalDate dataNascimento, String email, String miniCurriculo) {
+		this.nome = nome;
+		this.dataNascimento = dataNascimento;
+		this.email = email;
+		this.miniCurriculo = miniCurriculo;
+	}
+	
 }
