@@ -34,4 +34,18 @@ public class Livro {
 	private Integer numeroDePaginas;
 	
 	private LocalDate dataLancamento;
+
+	public Livro(String titulo, Autor autor, Integer numeroDePaginas, LocalDate dataLancamento) {
+		this.titulo = titulo;
+		this.autor = autor;
+		this.numeroDePaginas = numeroDePaginas;
+		this.dataLancamento = dataLancamento;
+	}
+
+	public void atualizarInformacoes(String titulo, Autor autor, Integer numeroDePaginas, LocalDate dataLancamento) {
+		this.titulo = titulo;
+		this.autor = autor;
+		this.numeroDePaginas = numeroDePaginas;
+		this.dataLancamento = dataLancamento;
+	}
 }
