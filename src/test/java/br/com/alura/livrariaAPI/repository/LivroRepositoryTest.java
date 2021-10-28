@@ -160,8 +160,73 @@ class LivroRepositoryTest {
 						Assertions.tuple("Autor 01", 2L, new BigDecimal("0.005")),
 						Assertions.tuple("Autor 02", 1L, new BigDecimal("0.0025")),
 						Assertions.tuple("Autor 03", 1L, new BigDecimal("0.0025")));
-	}
+	}// Esse teste está dando erro pois o autor_id está indo nulo
 	
-	// Esse ultimo teste está dando erro pois o autor_id está indo nulo
+	 @Test
+	  void deveriaAtualizarUmLivro() {
+	    Autor autorQualquer = autor;
+	    testEntityManager.persist(autorQualquer);
 
+		Livro livroQualquer = new Livro(
+				"Livro qualquer", 
+				autorQualquer, 
+				500, 
+				LocalDate.parse("2020-10-01"));
+		testEntityManager.persist(livroQualquer);
+
+		livroQualquer.atualizarInformacoes(
+				"Outro titulo", 
+				autorQualquer, 
+				400, 
+				LocalDate.parse("2005-05-05"));
+	    testEntityManager.merge(livroQualquer);
+
+	    List<Livro> livros = livroRepository.findAll();
+	    Assertions.assertThat(livros).hasSize(1).extracting(
+	    		Livro::getTitulo,
+	    		Livro::getAutor,
+	    		Livro::getNumeroDePaginas,
+	    		Livro::getDataLancamento)
+	      .containsExactlyInAnyOrder(
+	    		  Assertions.tuple(
+	    			"Outro titulo",
+	    			autorQualquer,
+					400, 
+					LocalDate.parse("2005-05-05")));
+
+	  }
+	 
+	 @Test
+	  void deveriaRemoverUmLivro() {
+	    Autor autorQualquer = autor;
+	    testEntityManager.persist(autorQualquer);
+
+	    Livro livroQualquer = new Livro(
+				"Livro qualquer", 
+				autorQualquer, 
+				500, 
+				LocalDate.parse("2020-10-01"));
+	    
+		testEntityManager.persist(livroQualquer);
+		
+		 testEntityManager.remove(livroQualquer);
+
+	    Assertions.assertThat(livroRepository.findAll()).isEmpty();
+	  }
+	 
+	 @Test
+	  void deveriaEncontrarUmLivroPorId() {
+	    Autor autorQualquer = autor;
+	    testEntityManager.persist(autorQualquer);
+
+	    Livro livroQualquer = new Livro(
+				"Livro qualquer", 
+				autorQualquer, 
+				500, 
+				LocalDate.parse("2020-10-01"));
+	    
+	    Long livroId = testEntityManager.persistAndGetId(livroQualquer, Long.class);
+
+	    Assertions.assertThat(livroRepository.getById(livroId)).isNotNull();
+	  }
 }

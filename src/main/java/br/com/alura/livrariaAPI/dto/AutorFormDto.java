@@ -10,10 +10,12 @@ import javax.validation.constraints.Size;
 import com.fasterxml.jackson.annotation.JsonFormat;
 
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Getter
 @Setter
+@NoArgsConstructor
 public class AutorFormDto {
 	
 	@NotBlank
@@ -29,4 +31,14 @@ public class AutorFormDto {
 	@NotBlank
 	@Size(min = 5, max = 250)
 	private String miniCurriculo;
+
+	public AutorFormDto(@NotBlank String nome, @Past LocalDate dataNascimento, @Email String email,
+			@NotBlank @Size(min = 5, max = 250) String miniCurriculo) {
+		this.nome = nome;
+		this.dataNascimento = dataNascimento;
+		this.email = email;
+		this.miniCurriculo = miniCurriculo;
+	}
+	
+	
 }
