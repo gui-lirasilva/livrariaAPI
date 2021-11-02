@@ -10,12 +10,14 @@ import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.Mockito;
 import org.mockito.junit.jupiter.MockitoExtension;
+import org.springframework.test.context.ActiveProfiles;
 
 import br.com.alura.livrariaAPI.dto.AutorDto;
 import br.com.alura.livrariaAPI.dto.AutorFormDto;
 import br.com.alura.livrariaAPI.repository.AutorRepository;
 
 @ExtendWith(MockitoExtension.class)
+@ActiveProfiles("test")
 class AutorServiceTest {
 
 	@Mock

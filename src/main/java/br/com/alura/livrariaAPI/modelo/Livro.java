@@ -2,6 +2,7 @@ package br.com.alura.livrariaAPI.modelo;
 
 import java.time.LocalDate;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -24,15 +25,19 @@ public class Livro {
 	
 	@Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Column(name = "id")
     private Long id;
 	
+	@Column(name = "titulo")
 	private String titulo;
 	
 	@ManyToOne
 	private Autor autor;
 	
+	@Column(name = "numerodepaginas")
 	private Integer numeroDePaginas;
 	
+	@Column(name = "datalancamento")
 	private LocalDate dataLancamento;
 
 	public Livro(String titulo, Autor autor, Integer numeroDePaginas, LocalDate dataLancamento) {

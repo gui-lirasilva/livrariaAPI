@@ -13,6 +13,7 @@ import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.Mockito;
 import org.mockito.junit.jupiter.MockitoExtension;
+import org.springframework.test.context.ActiveProfiles;
 
 import br.com.alura.livrariaAPI.dto.LivroDto;
 import br.com.alura.livrariaAPI.dto.LivroFormDto;
@@ -20,6 +21,7 @@ import br.com.alura.livrariaAPI.repository.AutorRepository;
 import br.com.alura.livrariaAPI.repository.LivroRepository;
 
 @ExtendWith(MockitoExtension.class)
+@ActiveProfiles("test")
 class LivroServiceTest {
 	
 	@Mock
