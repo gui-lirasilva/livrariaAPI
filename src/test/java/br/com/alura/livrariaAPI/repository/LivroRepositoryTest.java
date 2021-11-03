@@ -106,7 +106,7 @@ class LivroRepositoryTest {
 				LocalDate.parse("1869-05-22"), 
 				"autor1@gmail.com",
 				"Autor dos livros de ficcao");
-		testEntityManager.persist(autor);
+		testEntityManager.persist(autor1);
 		
 		Autor autor2 = new Autor(
 				"Nome do autor 2", 
@@ -157,9 +157,9 @@ class LivroRepositoryTest {
 						RelatorioLivrosAutorDto::getQuantidadeLivros,
 						RelatorioLivrosAutorDto::getPercentual)
 				.containsExactlyInAnyOrder(
-						Assertions.tuple("Autor 01", 2L, new BigDecimal("0.005")),
-						Assertions.tuple("Autor 02", 1L, new BigDecimal("0.0025")),
-						Assertions.tuple("Autor 03", 1L, new BigDecimal("0.0025")));
+						Assertions.tuple("Nome do autor 1", 2L, new BigDecimal("0.5")),
+						Assertions.tuple("Nome do autor 2", 1L, new BigDecimal("0.25")),
+						Assertions.tuple("Nome do autor 3", 1L, new BigDecimal("0.25")));
 	}// Esse teste está dando erro pois o autor_id está indo nulo
 	
 	 @Test

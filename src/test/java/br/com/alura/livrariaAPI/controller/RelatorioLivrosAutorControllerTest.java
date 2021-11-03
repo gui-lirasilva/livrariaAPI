@@ -27,7 +27,7 @@ class RelatorioLivrosAutorControllerTest {
 
 	@Test
 	void deveriaRetornarRelatorioComStatus200() throws Exception {
-		mockMvc.perform(get("/relatorios").contentType(MediaType.APPLICATION_JSON)).andExpect(status().isOk());
+		mockMvc.perform(get("/relatorios/autor").contentType(MediaType.APPLICATION_JSON)).andExpect(status().isOk());
 	}
 
 }
