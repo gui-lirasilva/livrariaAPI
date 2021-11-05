@@ -3,6 +3,11 @@ Projeto desafio de finalização do bootcamp de Java (Alura bootcamps).
 O projeto contém uma API REST para o gerenciamento de uma biblioteca, sendo feita com o framework Spring Boot e outras ferramentas para facilitar o desenvolvimento.
 O desenvolvimento da API foi feita com base no que pude aprender dos exercícios e projetos que foram abordados no bootcamp, mas contendo também minhas próprias modificações.
 
+![GitHub top language](https://img.shields.io/github/languages/top/gui-lirasilva/livrariaAPI)<space><space>
+![Lines of Code](https://img.shields.io/tokei/lines/github/gui-lirasilva/livrariaAPI)<space><space>
+![GitHub repo size](https://img.shields.io/github/repo-size/gui-lirasilva/livrariaAPI)<space><space>
+![Feito por](https://img.shields.io/badge/feito%20por-Guilherme%20Henrique-blueviolet)
+
 ## 🔨 Funcionalidades do projeto
 
 - [x] Cadastro de autor
