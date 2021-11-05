@@ -27,19 +27,33 @@ O desenvolvimento da API foi feita com base no que pude aprender dos exercícios
 ## ✔️ Técnicas e tecnologias utilizadas
 
  ``Java 11 (JDK 11.0.12)``
+
  ``Eclipse Enterprise Edition for Java and web developers``
+
  ``Spring Boot 2.5.4``
+ 
  ``Spring Boot DevTools ``
+ 
  ``Spring Web``
+ 
  ``Spring Validation (Bean validation)``
+ 
  ``JPA``
+ 
  ``Hibernate core 5.4.32``
+ 
  ``ModelMapper 2.4.2``
+ 
  ``Lombok 1.18.20``
+ 
  ``Flyway core 7.7.3``
+ 
  ``Migrations``
+ 
  ``MySQL 5.7``
+ 
  ``Postman 9.0.2``
+ 
  ``DTO (Data transfer object)``
 
 ### Endpoints
