@@ -6,7 +6,6 @@ O desenvolvimento da API foi feita com base no que pude aprender dos exercícios
 ![GitHub top language](https://img.shields.io/github/languages/top/gui-lirasilva/livrariaAPI)<space><space>
 ![Lines of Code](https://img.shields.io/tokei/lines/github/gui-lirasilva/livrariaAPI)<space><space>
 ![GitHub repo size](https://img.shields.io/github/repo-size/gui-lirasilva/livrariaAPI)<space><space>
-![Feito por](https://img.shields.io/badge/feito%20por-Guilherme%20Henrique-blue)
 
 ## 🔨 Funcionalidades do projeto
 
