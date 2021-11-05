@@ -10,17 +10,17 @@ O desenvolvimento da API foi feita com base no que pude aprender dos exercícios
 
 ## 🔨 Funcionalidades do projeto
 
-- [x] Cadastro de autor
-- [x] Listagem de autores
-- [x] Atualizar autor
-- [x] Remover autor
-- [x] Detalhar autor
-- [x] Cadastro de livro
-- [x] Listagem de livros
-- [x] Atualizar livro
-- [x] Remover livro
-- [x] Detalhar livro
-- [x] Relatório de quantidade de livros publicados por autor
+ - [x] Cadastro de autor
+ - [x] Listagem de autores
+ - [x] Atualizar autor
+ - [x] Remover autor
+ - [x] Detalhar autor
+ - [x] Cadastro de livro
+ - [x] Listagem de livros
+ - [x] Atualizar livro
+ - [x] Remover livro
+ - [x] Detalhar livro
+ - [x] Relatório de quantidade de livros publicados por autor
 
  
 
@@ -44,22 +44,22 @@ O desenvolvimento da API foi feita com base no que pude aprender dos exercícios
 
 ### Endpoints
 
-Path | Method | Description
----|---|---
-/autores           | GET    | Lista autores
-/autores           | POST   | Cadastra autor
-/autores           | PUT    | Atualiza autor
-/autores/id        | DELETE | Remove autor
-/autores/id        | GET    | Detalha autor
-/livros            | GET    | Lista livros
-/livros            | POST   | Cadastra livro
-/livros            | PUT    | Atualiza livro
-/livros/id         | DELETE | Remove livro
-/livros/id         | GET    | Detalha livro
-/relatorios/autor  | GET    | Exibe relatório
+ Path | Method | Description
+ ---|---|---
+ /autores           | GET    | Lista autores
+ /autores           | POST   | Cadastra autor
+ /autores           | PUT    | Atualiza autor
+ /autores/id        | DELETE | Remove autor
+ /autores/id        | GET    | Detalha autor
+ /livros            | GET    | Lista livros
+ /livros            | POST   | Cadastra livro
+ /livros            | PUT    | Atualiza livro
+ /livros/id         | DELETE | Remove livro
+ /livros/id         | GET    | Detalha livro
+ /relatorios/autor  | GET    | Exibe relatório
 
 ## 📁 Acesso ao projeto
-Você pode acessar os arquivos do projeto clicando [aqui](https://github.com/gui-lirasilva/livrariaAPI/tree/master/src/main/java/br/com/alura/livrariaAPI).
+ Você pode acessar os arquivos do projeto clicando [aqui](https://github.com/gui-lirasilva/livrariaAPI/tree/master/src/main/java/br/com/alura/livrariaAPI).
 
 ## 🖼 Imagens do funcionamento da API
 
