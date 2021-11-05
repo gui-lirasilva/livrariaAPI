@@ -1,6 +1,7 @@
 # Resumo do projeto
 Projeto desafio de finalização do bootcamp de Java (Alura bootcamps).
 O projeto contém uma API REST para o gerenciamento de uma biblioteca, sendo feita com o framework Spring Boot e outras ferramentas para facilitar o desenvolvimento.
+A persistência de dados está sendo realizada por meio de JPA e MySQL, com as migrations sendo feitas pelo Flyway.
 O desenvolvimento da API foi feita com base no que pude aprender dos exercícios e projetos que foram abordados no bootcamp, mas contendo também minhas próprias modificações.
 
 ![GitHub top language](https://img.shields.io/github/languages/top/gui-lirasilva/livrariaAPI)<space><space>
