@@ -25,20 +25,25 @@ import br.com.alura.livrariaAPI.dto.LivroDetalhadoDto;
 import br.com.alura.livrariaAPI.dto.LivroDto;
 import br.com.alura.livrariaAPI.dto.LivroFormDto;
 import br.com.alura.livrariaAPI.service.LivroService;
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
 
 @RestController
 @RequestMapping("/livros")
+@Api(tags = "Livro")
 public class LivroController {
 	
 	@Autowired
 	private LivroService service;
 	
 	@GetMapping
+	@ApiOperation("Listar livros")
 	public Page<LivroDto> listar(@PageableDefault(size = 10) Pageable paginacao){
 		return service.listar(paginacao);
 	}
 	
 	@PostMapping
+	@ApiOperation("Cadastrar livro")
 	public ResponseEntity<LivroDto> cadastrar (@RequestBody @Valid LivroFormDto dto, UriComponentsBuilder uriBuilder) {
 		LivroDto livroDto = service.cadastrar(dto);
 		URI uri = uriBuilder

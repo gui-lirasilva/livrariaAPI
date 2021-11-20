@@ -25,6 +25,7 @@ import br.com.alura.livrariaAPI.dto.AutorDetalhadoDto;
 import br.com.alura.livrariaAPI.dto.AutorDto;
 import br.com.alura.livrariaAPI.dto.AutorFormDto;
 import br.com.alura.livrariaAPI.service.AutorService;
+import io.swagger.annotations.ApiOperation;
 
 @RestController
 @RequestMapping("/autores")
@@ -34,11 +35,13 @@ public class AutorController {
 	private AutorService service;
 
 	@GetMapping
+	@ApiOperation("Listar autores")
 	public Page<AutorDto> listar(@PageableDefault(size = 10) Pageable paginacao) {
 		return service.listar(paginacao);
 	}
 
 	@PostMapping
+	@ApiOperation("Cadastrar autor")
 	public ResponseEntity<AutorDto> cadastrar(@RequestBody @Valid AutorFormDto dto, UriComponentsBuilder uriBuilder) {
 		AutorDto autorDto = service.cadastrar(dto);
 		URI uri = uriBuilder.path("/autores/{id}").buildAndExpand(autorDto.getId()).toUri();
