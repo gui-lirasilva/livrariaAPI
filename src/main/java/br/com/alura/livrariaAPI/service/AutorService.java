@@ -42,15 +42,9 @@ public class AutorService {
 
 	@Transactional
 	public AutorDto atualizar(AtualizacaoAutorFormDto dto) {
-		try {
-			Autor autor = autorRepository.getById(dto.getId());
-			autor.atualizarInformacoes(dto.getNome(), dto.getDataNascimento(), dto.getEmail(), dto.getMiniCurriculo());
-
-			return modelMapper.map(autor, AutorDto.class);
-
-		} catch (EntityNotFoundException e) {
-			throw new IllegalArgumentException();
-		}
+		Autor autor = autorRepository.getById(dto.getId());
+        autor.atualizarInformacoes(dto.getNome(), dto.getDataNascimento(), dto.getEmail(), dto.getMiniCurriculo());
+        return modelMapper.map(autor, AutorDto.class);
 	}
 
 	@Transactional
@@ -59,7 +53,7 @@ public class AutorService {
 	}
 
 	public AutorDetalhadoDto detalhar(Long id) {
-		Autor autor = autorRepository.findById(id).orElseThrow(EntityNotFoundException::new);
+		Autor autor = autorRepository.findById(id).orElseThrow(() -> new EntityNotFoundException());
 		return modelMapper.map(autor, AutorDetalhadoDto.class);
 	}
 }

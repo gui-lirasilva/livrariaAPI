@@ -23,14 +23,14 @@ import lombok.Setter;
 public class LivroFormDto {
 	
 	@NotBlank
-	@Size(min = 10, max = 50, message = "Titulo deve conter entre 10 e 50 caracteres")
+	@Size(min = 10, max = 80)
 	private String titulo;
 	
-	@Min(100)
+	@Min(value = 100, message = "{livro.paginas.invalido}")
 	@NotNull
 	private Integer numeroDePaginas;
 	
-	@PastOrPresent(message = "A data deve estar no presente ou passado")
+	@PastOrPresent
 	@JsonFormat(pattern = "dd/MM/yyyy")
 	private LocalDate dataLancamento;
 	
