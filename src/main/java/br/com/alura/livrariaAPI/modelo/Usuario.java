@@ -30,25 +30,25 @@ import org.springframework.security.core.userdetails.UserDetails;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-@Table(name = "USUARIOS")
+@Table(name = "usuarios")
 public class Usuario implements UserDetails {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	@Column(name = "ID")
+	@Column(name = "id")
 	private Long id;
 
-	@Column(name = "NOME")
+	@Column(name = "nome")
 	private String nome;
 
-	@Column(name = "LOGIN")
+	@Column(name = "login")
 	private String login;
 
-	@Column(name = "SENHA")
+	@Column(name = "senha")
 	private String senha;
 
 	@ManyToMany
-	@JoinTable(name = "PERFIS_USUARIOS", joinColumns = @JoinColumn(name = "USUARIO_ID"), inverseJoinColumns = @JoinColumn(name = "PERFIL_ID"))
+	@JoinTable(name = "perfis_usuarios", joinColumns = @JoinColumn(name = "usuario_id"), inverseJoinColumns = @JoinColumn(name = "perfil_id"))
 	private List<Perfil> perfis = new ArrayList<>();
 
 	public Usuario(String nome, String login, String senha) {

@@ -23,15 +23,15 @@ import lombok.Setter;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-@Table(name = "PERFIS")
+@Table(name = "perfis")
 public class Perfil implements GrantedAuthority {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	@Column(name = "ID")
+	@Column(name = "id")
 	private Long id;
 
-	@Column(name = "NOME")
+	@Column(name = "nome")
 	private String nome;
 
 	@Override
