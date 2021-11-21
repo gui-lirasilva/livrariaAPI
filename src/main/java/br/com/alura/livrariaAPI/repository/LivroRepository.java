@@ -11,13 +11,17 @@ import org.springframework.data.jpa.repository.Query;
 @Repository
 public interface LivroRepository extends JpaRepository<Livro, Long>{
 	
-    @Query("select new br.com.alura.livrariaAPI.dto.RelatorioLivrosAutorDto("
-			+ "a.nome, "
-			+ "count(l.autor), "
-			+ "count (l.autor) * 1.0 / (select count(l2.autor) from Livro l2) * 1.0) "
-			+ "from Livro l "
-			+ "inner join Autor a "
-			+ "on a.id = l.autor "
-			+ "group by a.nome")
+    @Query("select new br.com.alura.livrariaAPI.dto.RelatorioLivrosAutorDto(l.autor.nome, count(*), " +
+            "count(*) * 1.0 / (select count(*) from Livro l2) * 1.0 as percentual) " +
+            "from Livro l group by l.autor order by percentual desc")
 	List<RelatorioLivrosAutorDto> relatorioDeLivros();
+    
+//    "select new br.com.alura.livrariaAPI.dto.RelatorioLivrosAutorDto("
+//	+ "a.nome, "
+//	+ "count(l.autor), "
+//	+ "count (l.autor) * 1.0 / (select count(l2.autor) from Livro l2) * 1.0) "
+//	+ "from Livro l "
+//	+ "inner join Autor a "
+//	+ "on a.id = l.autor "
+//	+ "group by a.nome"
 }
