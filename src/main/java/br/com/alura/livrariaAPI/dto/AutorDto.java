@@ -23,7 +23,7 @@ public class AutorDto {
 	@JsonFormat(pattern = "dd/MM/yyyy")
 	private LocalDate dataNascimento;
 
-	public AutorDto(String nome, String email, String miniCurriculo, LocalDate dataDeNascimento) {
+	public AutorDto(String nome, LocalDate dataDeNascimento, String email, String miniCurriculo) {
 		this.nome = nome;
 		this.email = email;
 		this.miniCurriculo = miniCurriculo;
