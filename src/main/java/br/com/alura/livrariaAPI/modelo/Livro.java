@@ -33,7 +33,7 @@ public class Livro {
 	private String titulo;
 	
 	@ManyToOne
-	@JoinColumn(name = "autor")
+	@JoinColumn(name = "autor_id")
 	private Autor autor;
 	
 	@Column(name = "numerodepaginas")

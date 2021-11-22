@@ -55,7 +55,7 @@ class RelatorioLivrosAutorControllerTest {
 	@Test
 	void deveriaRetornarRelatorioComStatus200() throws Exception {
 		mockMvc.perform(
-				get("/relatorios")
+				get("/relatorios/autor")
 				.contentType(MediaType.APPLICATION_JSON)
 				.header("Authorization", "Bearer " + token))
 	      .andExpect(status().isOk());
